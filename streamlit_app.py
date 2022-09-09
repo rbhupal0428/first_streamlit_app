@@ -9,3 +9,5 @@ streamlit.text('Kale, Spinach & Rocket Smoothie')
 streamlit.text('Medhu Vada with sambar')
 streamlit.text('Scrabled eggs and toast with some hashbrowns')  
 streamlit.text('Avocado Toast')
+
+streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
