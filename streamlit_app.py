@@ -39,8 +39,7 @@ try:
       ### fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
       ### fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
       back_from_function = get_fruityvice_data(fruit_choice)
-      streamlit.dataframe(back_from_function)
-      
+      streamlit.dataframe(back_from_function)     
 except URLError as e: 
   streamlit.error()
     
@@ -77,6 +76,7 @@ if streamlit.button('Get Fruit Load List'):
     my_data_row = get_fruit_load_list()
     streamlit.dataframe(my_data_row)
 
+streamlit.stop() 
 
 # Allow the ednd user to add a fruit to the list...
 add_my_fruit = streamlit.text_input('What fruit would you like to add?', 'jackfruit')
